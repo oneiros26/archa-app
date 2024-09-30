@@ -1,6 +1,5 @@
-<gridLayout rows="auto, auto, auto" columns="auto, auto, auto" class="ticket">
-    <label textWrap="true">Home</label>
-</gridLayout>
+<webView src="https://www.archa-plus.cz/cz/"></webView>
+
 
 <style>
     
