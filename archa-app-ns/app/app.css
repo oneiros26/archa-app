@@ -1,6 +1,23 @@
 ﻿@import '@nativescript/theme/css/core.css';
 @import '@nativescript/theme/css/default.css';
 
+:root {
+  --c_primary: #b8ff00;
+  --c_primary_dark: #ff4c00;
+  --c_dark: #0f0f0f;
+  --c_light: #f0f0f0;
+
+  --c_text: #000;
+  --c_text_light: #fff;
+
+  --c_purple: #ac71ff;
+  --c_pink: #ff78d9;
+  --c_orange: #ff4c00;
+  --c_green: #64d13e;
+  --light_blue: #76a8ff;
+}
+
+/* Custom fonts */
 .fab {
   font-family: 'Font Awesome 5 Brands', 'fa-brands-400';
   font-weight: 400;
@@ -14,5 +31,30 @@
 .far {
   font-family: 'Font Awesome 5 Free', 'fa-regular-400';
   font-weight: 400;
+}
+
+.farch-reg {
+  font-family: 'Archabeta Regular', 'archabeta-regular';
+  font-weight: 400;
+}
+
+.farch-extrabold {
+  font-family: 'Archabeta ExtraBold', 'archabeta-extrabold';
+  font-weight: 800;
+}
+
+.farch-bold {
+  font-family: 'Archabeta Bold', 'archabeta-bold';
+  font-weight: 700;
+}
+
+.farch-light {
+  font-family: 'Archabeta Light', 'archabeta-light';
+  font-weight: 300;
+}
+
+.farch-medium {
+  font-family: 'Archabeta Medium', 'archabeta-medium';
+  font-weight: 500;
 }
 
