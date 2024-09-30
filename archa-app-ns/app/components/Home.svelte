@@ -1,5 +1,10 @@
 <script>
     import { Page, GridLayout, Label } from '@nativescript/core';
+	import Ticket from './Ticket.svelte';
+	import Search from './Search.svelte';
+	import Messagenig from './Messagenig.svelte';
+	import Profile from './Profile.svelte';
+	import RealHome from './RealHome.svelte';
 </script>
 
 <page class="red">
@@ -7,21 +12,22 @@
         <image src="~/assets/archa.png" width="40" height="40"></image>
     </actionBar>
 
-	<tabView androidTabsPosition="bottom">
+	<tabView androidTabsPosition="bottom" androidSelectedTabHighlightColor="">
 		<tabViewItem title="" class="fas tab_size">
-				<label textWrap="true">Coming soon... hopefully</label>
+			<!--Import Ticket app-->
+			<RealHome />
 		</tabViewItem>
 		<tabViewItem title="" class="fas tab_size" >
-				<label textWrap="true">Coming soon as well...</label>
+			<Ticket />
 		</tabViewItem>
 		<tabViewItem title="" class="fas tab_size">
-			<label textWrap="true">Coming soon as well...</label>
+			<Search />
 		</tabViewItem>
 		<tabViewItem title="" class="fas tab_size">
-			<label textWrap="true">Coming soon as well... maybe</label>
+			<Messagenig />
 		</tabViewItem>
 		<tabViewItem title="" class="fas tab_size">
-			<label textWrap="true">Coming soon as well...</label>
+			<Profile />
 		</tabViewItem>
 	
 	</tabView>
