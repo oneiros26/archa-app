@@ -15,9 +15,13 @@ Other barvy:
  - svetle modra: #76a8ff
 
 Plany:
- - Klany
- - Klanove valky
  - Battlepass
+    - 1rok / 6mesicu
  - Videohra
- - TikTok ukazky divadel
+
+Komunita
+ - profil
+ - divadelni hry na kterych si byl
+ - uzivatel muze delat hodnotit hry
+ - gamba na no value itemy
 
