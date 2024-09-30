@@ -1,6 +1,5 @@
-<gridLayout rows="auto, auto, auto" columns="auto, auto, auto" class="ticket">
-    <label textWrap="true">Search</label>
-</gridLayout>
+<webView src="https://archa-plus.cz/en/search/?searchString=+"></webView>
+
 
 <style>
     
