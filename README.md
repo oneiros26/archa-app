@@ -6,6 +6,7 @@ Barvy:
  - main: #b8ff00 - zelena
  - secondary: #ff4c00 - oranzova
  - hodne jeste bila a cerna
+
 Other barvy:
  - fialova: #ac71ff
  - ruzova: #ff78d9
