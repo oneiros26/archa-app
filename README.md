@@ -3,8 +3,8 @@
 Font: Helvetica Neue
 
 Barvy:
- - main: #b8ff00 - zelena
- - secondary: #ff4c00 - oranzova
+ - main (light): #b8ff00 - zelena
+ - main (dark): #ff4c00 - oranzova
  - hodne jeste bila a cerna
 
 Other barvy:
