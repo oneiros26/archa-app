@@ -14,3 +14,8 @@ Other barvy:
  - jina zelena: #64d13e
  - svetle modra: #76a8ff
 
+Plany:
+ - Klany
+ - Klanove valky
+ - Battlepass
+ - Videohra?
