@@ -11,16 +11,16 @@
 		<tabViewItem title="" class="fas tab_size">
 				<label textWrap="true">Coming soon... hopefully</label>
 		</tabViewItem>
-		<tabViewItem title="" class="tab_size" >
+		<tabViewItem title="" class="fas tab_size" >
 				<label textWrap="true">Coming soon as well...</label>
 		</tabViewItem>
-		<tabViewItem title="" class="tab_size">
+		<tabViewItem title="" class="fas tab_size">
 			<label textWrap="true">Coming soon as well...</label>
 		</tabViewItem>
-		<tabViewItem title="😐" class="tab_size">
+		<tabViewItem title="" class="fas tab_size">
 			<label textWrap="true">Coming soon as well... maybe</label>
 		</tabViewItem>
-		<tabViewItem title="U" class="tab_size">
+		<tabViewItem title="" class="fas tab_size">
 			<label textWrap="true">Coming soon as well...</label>
 		</tabViewItem>
 	
