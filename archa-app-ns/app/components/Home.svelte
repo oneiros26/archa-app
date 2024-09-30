@@ -12,7 +12,7 @@
         <image src="~/assets/archa.png" width="40" height="40"></image>
     </actionBar>
 
-	<tabView androidTabsPosition="bottom" androidSelectedTabHighlightColor="">
+	<tabView androidTabsPosition="bottom" androidSelectedTabHighlightColor="#b8ff00" tabTextColor="#b8ff00" tabBackgroundColor="#0f0f0f" selectedTabTextColor="#f0f0f0">
 		<tabViewItem title="" class="fas tab_size">
 			<!--Import Ticket app-->
 			<RealHome />
