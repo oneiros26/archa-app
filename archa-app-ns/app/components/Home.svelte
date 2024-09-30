@@ -2,25 +2,25 @@
     import { Page, GridLayout, Label } from '@nativescript/core';
 </script>
 
-<page>
+<page class="red">
     <actionBar title="Home" class="action-bar">
         <image src="~/assets/archa.png" width="40" height="40"></image>
     </actionBar>
 
-	<tabView>
-		<tabViewItem title="Home">
+	<tabView androidTabsPosition="bottom">
+		<tabViewItem title="" class="fas tab_size">
 				<label textWrap="true">Coming soon... hopefully</label>
 		</tabViewItem>
-		<tabViewItem title="Battlepass">
+		<tabViewItem title="" class="tab_size" >
 				<label textWrap="true">Coming soon as well...</label>
 		</tabViewItem>
-		<tabViewItem title="Battlepass">
+		<tabViewItem title="" class="tab_size">
 			<label textWrap="true">Coming soon as well...</label>
 		</tabViewItem>
-		<tabViewItem title="Search">
+		<tabViewItem title="😐" class="tab_size">
 			<label textWrap="true">Coming soon as well... maybe</label>
 		</tabViewItem>
-		<tabViewItem title="User Profile">
+		<tabViewItem title="U" class="tab_size">
 			<label textWrap="true">Coming soon as well...</label>
 		</tabViewItem>
 	
@@ -43,6 +43,14 @@
 		--c_orange: #ff4c00;
 		--c_green: #64d13e;
 		--light_blue: #76a8ff;
+	}
+
+	.tab_size {
+		font-size: 25;
+	}
+
+	label {
+		font-size: 10;
 	}
 
 	actionBar {
