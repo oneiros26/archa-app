@@ -1,5 +1,4 @@
 <script>
-    import { Page, GridLayout, Label } from '@nativescript/core';
 	import Ticket from './Ticket.svelte';
 	import Search from './Search.svelte';
 	import Messagenig from './Messagenig.svelte';
@@ -14,7 +13,6 @@
 
 	<tabView androidTabsPosition="bottom" androidSelectedTabHighlightColor="#b8ff00" tabTextColor="#b8ff00" tabBackgroundColor="#0f0f0f" selectedTabTextColor="#f0f0f0">
 		<tabViewItem title="" class="fas tab_size">
-			<!--Import Ticket app-->
 			<RealHome />
 		</tabViewItem>
 		<tabViewItem title="" class="fas tab_size" >
@@ -31,7 +29,6 @@
 		</tabViewItem>
 	
 	</tabView>
-
 </page>
 
 <style>
@@ -50,15 +47,9 @@
 		--c_green: #64d13e;
 		--light_blue: #76a8ff;
 	}
-
 	.tab_size {
 		font-size: 25;
 	}
-
-	label {
-		font-size: 10;
-	}
-
 	actionBar {
 		background-color: #b8ff00;
 	}
