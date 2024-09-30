@@ -6,6 +6,26 @@
     <actionBar title="Home" class="action-bar">
         <image src="~/assets/archa.png" width="40" height="40"></image>
     </actionBar>
+
+	<tabView>
+		<tabViewItem title="Home">
+				<label textWrap="true">Coming soon... hopefully</label>
+		</tabViewItem>
+		<tabViewItem title="Battlepass">
+				<label textWrap="true">Coming soon as well...</label>
+		</tabViewItem>
+		<tabViewItem title="Battlepass">
+			<label textWrap="true">Coming soon as well...</label>
+		</tabViewItem>
+		<tabViewItem title="Search">
+			<label textWrap="true">Coming soon as well... maybe</label>
+		</tabViewItem>
+		<tabViewItem title="User Profile">
+			<label textWrap="true">Coming soon as well...</label>
+		</tabViewItem>
+	
+	</tabView>
+
 </page>
 
 <style>
