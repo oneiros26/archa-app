@@ -1,88 +1,80 @@
 <gridLayout rows="auto, auto, auto, *, auto" columns="auto, *, *" class="profile-grid">
-  <!-- Profile Picture (Image) -->
-  <image src="~/assets/profile.png" row="0" col="0"  class="profile-picture" />
 
-  <!-- User Info Section (User Name, Bio, Hashtags, Socials) -->
-  <gridLayout row="0" col="1" colSpan="2" rows="auto, auto, auto, auto" columns="*" class="user-info">
-    <label text="Uživatel" class="user-name" />
-    <label text="Bio/popisek" row="1" col="0" class="bio" />
-    <label text="#hashtag1 #hashtag2" row="2" col="0" class="hashtags" />
-    <label text="🌐" row="3" col="0" class="social-media" />
+  <gridLayout row="0" col="1" colSpan="2" rows="auto, auto, auto, auto" columns="*,*" class="user-info">
+    <image src="~/assets/profile.png" row="0" col="0"  class="profile-picture" />
+    <label text="Alexandr Novák" class="user-name" fontFamily="'Archabeta Bold', 'archabeta-bold'" fontWeight="700"/>
+    <label textWrap="true" text="Milovník divadla, který rád objevuje nové inscenace a sdílí zážitky z kulturních představení." row="1" col="0" class="bio" fontFamily="'Archabeta Regular', 'archabeta-regular'" fontWeight="400"/>
+    <label text="#romeoajulio #shakespeare" row="2" col="0" class="hashtags" fontFamily="'Archabeta Bold', 'archabeta-bold'" fontWeight="700"/>
+    <label text="" row="3" col="0" class="social-media" fontFamily="'Font Awesome 5 Free', 'fa-regular-400'"/>
   </gridLayout>
 
-  <!-- Comments Section -->
-  <label text="Komentáře" row="2" col="0" rowSpan="2" class="comments" /> <!-- Moved down to prevent overlap -->
+  <gridLayout row="1" col="0" colSpan="3" rows="auto, auto" columns="*" class="user-info">
+    <label text="Sledované" row="0" col="0" colSpan="2" class="watched-movies" fontFamily="'Archabeta Bold', 'archabeta-bold'" fontWeight="700"/>
+    <label text="Komentáře" row="1" col="0" rowSpan="2" class="comments" fontFamily="'Archabeta Bold', 'archabeta-bold'" fontWeight="700"/>
+  </gridLayout> 
 
-  <!-- Watched Movies Section -->
-  <label text="Sledované" row="2" col="1" colSpan="2" class="watched-movies" /> <!-- Adjusted position -->
+  
 </gridLayout>
 
 <style>
-  /* Overall Grid Layout */
+
   .profile-grid {
     gap: 20px;
     background-color: #000;
     padding: 20px;
   }
 
-  /* Profile Picture: Grid Item */
   .profile-picture {
     width: 300px;
     height: 300px;
     border-radius: 50%;
     object-fit: cover;
-    background-color: #1a1a1a;
   }
 
-  /* User Info Section */
   .user-info {
     padding: 10px;
+    margin-left: 50px;
+    margin-top: 80px;
   }
 
   .user-name {
     font-size: 20px;
     color: #fff;
-    /*background-color: #64d13e;*/
     padding: 5px;
     border-radius: 5px;
   }
 
   .bio {
-    font-size: 14px;
+    font-size: 12px;
     color: #fff;
     margin-top: 10px;
   }
 
   .hashtags {
-    font-size: 12px;
+    font-size: 14px;
     color: #aaa;
     margin-top: 10px;
   }
 
-  /* Comments */
   .comments {
     background-color: #555;
     color: white;
     padding: 10px;
     text-align: left;
     margin-top: 50px;
-    border-radius: 10px; /* Added border radius */
-    rowSpan: 2; /* Ensures it spans two rows */
+    border-radius: 10px;
   }
 
-  /* Social Media */
   .social-media {
-    background-color: none; /* Added a background color */
-    color: white;
-    padding: 10px; /* Added padding for aesthetics */
-    margin-top: 20px; /* Added margin to create space */
+    color: #f0f0f0;
+    padding: 10px;
+    margin-top: 20px; 
     text-align: right;
   }
 
-  /* Watched Movies */
   .watched-movies {
-    color: white;
+    color: #f0f0f0;
     text-align: center;
-    margin-top: 20px; /* Consistent spacing */
+    margin-top: 20px;
   }
 </style>
