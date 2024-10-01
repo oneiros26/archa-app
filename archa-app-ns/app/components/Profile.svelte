@@ -1,19 +1,20 @@
-<gridLayout rows="auto, auto, auto, *, auto" columns="auto, *, *" class="profile-grid">
+<gridLayout rows="auto, auto, auto, *, *" columns="auto, *, *" class="profile-grid">
+  <!-- Profile Picture (Image) -->
+  <image src="~/assets/profile.png" row="0" col="0" class="profile-picture" />
 
-  <gridLayout row="0" col="1" colSpan="2" rows="auto, auto, auto, auto" columns="*,*" class="user-info">
-    <image src="~/assets/profile.png" row="0" col="0"  class="profile-picture" />
-    <label text="Alexandr Novák" class="user-name" fontFamily="'Archabeta Bold', 'archabeta-bold'" fontWeight="700"/>
-    <label textWrap="true" text="Milovník divadla, který rád objevuje nové inscenace a sdílí zážitky z kulturních představení." row="1" col="0" class="bio" fontFamily="'Archabeta Regular', 'archabeta-regular'" fontWeight="400"/>
-    <label text="#romeoajulio #shakespeare" row="2" col="0" class="hashtags" fontFamily="'Archabeta Bold', 'archabeta-bold'" fontWeight="700"/>
-    <label text="" row="3" col="0" class="social-media" fontFamily="'Font Awesome 5 Free', 'fa-regular-400'"/>
+  <!-- User Info Section (User Name, Bio, Hashtags, Socials) -->
+  <gridLayout row="0" col="1" colSpan="2" rows="auto, auto, auto, auto" columns="*" class="user-info">
+    <label text="Uživatel" class="user-name" />
+    <label text="Bio/popisek" row="1" col="0" class="bio" />
+    <label text="#hashtag1 #hashtag2" row="2" col="0" class="hashtags" />
+    <label text="🌐" row="3" col="0" class="social-media" />
   </gridLayout>
 
-  <gridLayout row="1" col="0" colSpan="3" rows="auto, auto" columns="*" class="user-info">
-    <label text="Sledované" row="0" col="0" colSpan="2" class="watched-movies" fontFamily="'Archabeta Bold', 'archabeta-bold'" fontWeight="700"/>
-    <label text="Komentáře" row="1" col="0" rowSpan="2" class="comments" fontFamily="'Archabeta Bold', 'archabeta-bold'" fontWeight="700"/>
-  </gridLayout> 
+  <!-- Watched Movies Section (Full width, below profile picture and user info) -->
+  <label text="Sledované" row="3" col="0" colSpan="3" class="watched-movies" />
 
-  
+  <!-- Comments Section (Full width, below Watched Movies) -->
+  <label text="Komentáře" row="4" col="0" colSpan="3" class="comments" />
 </gridLayout>
 
 <style>
@@ -22,6 +23,7 @@
     gap: 20px;
     background-color: #000;
     padding: 20px;
+    height: 100vh; /* Full viewport height */
   }
 
   .profile-picture {
@@ -34,7 +36,7 @@
   .user-info {
     padding: 10px;
     margin-left: 50px;
-    margin-top: 80px;
+    margin-top: 30px;
   }
 
   .user-name {
@@ -56,25 +58,34 @@
     margin-top: 10px;
   }
 
+  /* Watched Movies */
+  .watched-movies {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    width: 100%; /* Full width */
+    height: 100%; /* Takes remaining available space */
+  }
+
+  /* Comments */
   .comments {
     background-color: #555;
     color: white;
     padding: 10px;
-    text-align: left;
-    margin-top: 50px;
+    text-align: center;
     border-radius: 10px;
+    width: 100%; /* Full width */
+    height: 100%; /* Takes remaining available space */
+  }
+
+  /* Ensure the watched movies and comments fill the screen */
+  .profile-grid > .watched-movies, .profile-grid > .comments {
+    flex: 1;
   }
 
   .social-media {
-    color: #f0f0f0;
-    padding: 10px;
-    margin-top: 20px; 
     text-align: right;
-  }
-
-  .watched-movies {
-    color: #f0f0f0;
-    text-align: center;
-    margin-top: 20px;
   }
 </style>
