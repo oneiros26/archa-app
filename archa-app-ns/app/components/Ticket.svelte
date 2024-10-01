@@ -1,5 +1,4 @@
 <script>
-
 </script>
 <scrollView>
     <flexboxLayout flexDirection="column" class="vertical-gradient-background">

@@ -1,20 +1,20 @@
 <gridLayout rows="auto, auto, auto, *, auto" columns="auto, *, *" class="profile-grid">
   <!-- Profile Picture (Image) -->
-  <image src="~/assets/archa_neg.png" row="0" col="0"  class="profile-picture" />
+  <image src="~/assets/profile.png" row="0" col="0"  class="profile-picture" />
 
   <!-- User Info Section (User Name, Bio, Hashtags, Socials) -->
   <gridLayout row="0" col="1" colSpan="2" rows="auto, auto, auto, auto" columns="*" class="user-info">
-    <label text="User Name" class="user-name" />
-    <label text="Bio goes here" row="1" col="0" class="bio" />
+    <label text="Uživatel" class="user-name" />
+    <label text="Bio/popisek" row="1" col="0" class="bio" />
     <label text="#hashtag1 #hashtag2" row="2" col="0" class="hashtags" />
     <label text="🌐" row="3" col="0" class="social-media" />
   </gridLayout>
 
   <!-- Comments Section -->
-  <label text="Comments" row="2" col="0" rowSpan="2" class="comments" /> <!-- Moved down to prevent overlap -->
+  <label text="Komentáře" row="2" col="0" rowSpan="2" class="comments" /> <!-- Moved down to prevent overlap -->
 
   <!-- Watched Movies Section -->
-  <label text="Watched Movies" row="2" col="1" colSpan="2" class="watched-movies" /> <!-- Adjusted position -->
+  <label text="Sledované" row="2" col="1" colSpan="2" class="watched-movies" /> <!-- Adjusted position -->
 </gridLayout>
 
 <style>
@@ -42,7 +42,7 @@
   .user-name {
     font-size: 20px;
     color: #fff;
-    background-color: #2ecc71;
+    /*background-color: #64d13e;*/
     padding: 5px;
     border-radius: 5px;
   }
