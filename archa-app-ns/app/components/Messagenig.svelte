@@ -1,27 +1,33 @@
 <script>
 	import { writable } from 'svelte/store';
-	let textElem = ''; // Message input
-	let messages = writable([]); // Array to store the messages
+	let textElem = '';
+	let messages = writable([]);
 
 	function sendMessage() {
 		if (textElem) {
-			// Add the new message to the messages array
 			messages.update((msgs) => [...msgs, textElem]);
-			console.log(textElem); // Log the entered message
-			textElem = ''; // Clear the input after sending
+			console.log(textElem);
+			textElem = '';
 		}
 	}
 </script>
 
 <absoluteLayout>
-	<label left="110" top="0" text="Hi, want to get some bitches?" backgroundColor="#64d13e" />
-	<label left="123" top="50" text="This is the messaging page." backgroundColor="#64d13e" />
+	<label textWrap="true" marginLeft="100" top="0" text="Ahoj, včera jsem viděl Hamleta" backgroundColor="#64d13e" />
+	<label textWrap="true" marginLeft="62" top="50" text="Musím říct, že to bylo fenomenální!" backgroundColor="#64d13e" />
+	<label textWrap="true" marginLeft="20" top="110" text="Já na tom byl minulý měsíc" backgroundColor="#76a8ff" />
+	<label textWrap="true" marginLeft="20" top="160" text="úplně mě dostala scéna s duchem!" backgroundColor="#76a8ff" />
+	<label textWrap="true" marginLeft="255" top="220" text="To zní super!" backgroundColor="#ff4c00" />
+	<label textWrap="true" marginLeft="92" top="270" text="Jaká byla atmosféra na jevišti?" backgroundColor="#ff4c00" />
+	<label textWrap="true" marginLeft="67" top="320" text="Přemýšlím, že bych šel o víkendu." backgroundColor="#ff4c00" />
+	<label textWrap="true" marginLeft="165" top="380" text="Atmosféra byla skvělá!" backgroundColor="#64d13e" />
+	<label textWrap="true" marginLeft="113" top="430" text="Hudba tomu hodně pomohla." backgroundColor="#64d13e" />
+	<label textWrap="true" marginLeft="203" top="490" text="Tak to už se těším!" backgroundColor="#ff4c00" />
 	
-	<!-- This block dynamically generates new labels for each message -->
 	{#each $messages as message, i}
 		<label
-			right="0"
-			top={100 + (i * 50)}
+			left="20"
+			top={550 + (i * 50)}
 			text={message}
 			backgroundColor="#76a8ff"
 			marginTop="10"
