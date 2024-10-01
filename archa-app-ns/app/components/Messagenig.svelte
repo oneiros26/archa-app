@@ -51,6 +51,7 @@
 
 	button {
 		background-color: #76a8ff;
+		border-radius: 20%;
 	}
 
 	label {

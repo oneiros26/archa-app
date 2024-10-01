@@ -1,19 +1,16 @@
 <gridLayout rows="auto, auto, auto, *, *" columns="auto, *, *" class="profile-grid">
-  <!-- Profile Picture (Image) -->
+
   <image src="~/assets/profile.png" row="0" col="0" class="profile-picture" />
 
-  <!-- User Info Section (User Name, Bio, Hashtags, Socials) -->
   <gridLayout row="0" col="1" colSpan="2" rows="auto, auto, auto, auto" columns="*" class="user-info">
-    <label text="Uživatel" class="user-name" />
-    <label text="Bio/popisek" row="1" col="0" class="bio" />
-    <label text="#hashtag1 #hashtag2" row="2" col="0" class="hashtags" />
+    <label text="Jirka Miklusčák" class="user-name" font-family="'Archabeta Bold', 'archabeta-bold'" fontWeight="700"/>
+    <label textWrap="true" text="Milovník divadla, především klasických tragédií." row="1" col="0" class="bio" font-family="'Archabeta Regular', 'archabeta-regular'" fontWeight="400"/>
+    <label text="#romeoajulie #shakespear" row="2" col="0" class="hashtags" font-family="'Archabeta Bold', 'archabeta-bold'" fontWeight="700"/>
     <label text="🌐" row="3" col="0" class="social-media" />
   </gridLayout>
 
-  <!-- Watched Movies Section (Full width, below profile picture and user info) -->
   <label text="Sledované" row="3" col="0" colSpan="3" class="watched-movies" />
 
-  <!-- Comments Section (Full width, below Watched Movies) -->
   <label text="Komentáře" row="4" col="0" colSpan="3" class="comments" />
 </gridLayout>
 
@@ -21,9 +18,9 @@
 
   .profile-grid {
     gap: 20px;
-    background-color: #000;
+    background-color: #f0f0f0;
     padding: 20px;
-    height: 100vh; /* Full viewport height */
+    height: 100vh; 
   }
 
   .profile-picture {
@@ -31,6 +28,7 @@
     height: 300px;
     border-radius: 50%;
     object-fit: cover;
+    margin: 10;
   }
 
   .user-info {
@@ -41,46 +39,48 @@
 
   .user-name {
     font-size: 20px;
-    color: #fff;
+    color: #0f0f0f;
     padding: 5px;
     border-radius: 5px;
   }
 
   .bio {
     font-size: 12px;
-    color: #fff;
+    color: #0f0f0f;
     margin-top: 10px;
   }
 
   .hashtags {
     font-size: 14px;
-    color: #aaa;
+    color: #0f0f0f;
     margin-top: 10px;
   }
 
-  /* Watched Movies */
   .watched-movies {
-    background-color: #333;
-    color: white;
+    background-color: #f0f0f0;
+    color: #0f0f0f;
     padding: 10px;
     text-align: center;
-    border-radius: 10px;
-    width: 100%; /* Full width */
-    height: 100%; /* Takes remaining available space */
+    border-radius: 10%;
+    width: 100%;
+    height: 90%;
+    border-width: 10;
+    border-color: #ff4c00;
+    margin-bottom: 10;
   }
 
-  /* Comments */
   .comments {
-    background-color: #555;
-    color: white;
+    background-color: #f0f0f0;
+    color: #0f0f0f;
     padding: 10px;
     text-align: center;
-    border-radius: 10px;
-    width: 100%; /* Full width */
-    height: 100%; /* Takes remaining available space */
+    border-radius: 10%;
+    width: 100%;
+    height: 90%;
+    border-width: 10;
+    border-color: #64d13e;
   }
 
-  /* Ensure the watched movies and comments fill the screen */
   .profile-grid > .watched-movies, .profile-grid > .comments {
     flex: 1;
   }
