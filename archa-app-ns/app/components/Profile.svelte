@@ -4,14 +4,15 @@
 
   <gridLayout row="0" col="1" colSpan="2" rows="auto, auto, auto, auto" columns="*" class="user-info">
     <label text="Jirka Miklusčák" class="user-name" font-family="'Archabeta Bold', 'archabeta-bold'" fontWeight="700"/>
-    <label textWrap="true" text="Milovník divadla, především klasických tragédií." row="1" col="0" class="bio" font-family="'Archabeta Regular', 'archabeta-regular'" fontWeight="400"/>
+    <label textWrap="true" text="Milovník divadla, především klasických tragédií." row="1" col="0" class="bio" font-family="'Archabeta Regular', 'archabeta-regular'" fontWeight="300"/>
     <label text="#romeoajulie #shakespear" row="2" col="0" class="hashtags" font-family="'Archabeta Bold', 'archabeta-bold'" fontWeight="700"/>
     <label text="🌐" row="3" col="0" class="social-media" />
   </gridLayout>
 
-  <label text="Sledované" row="3" col="0" colSpan="3" class="watched-movies" />
+  <label text="Poslední navštívené hry" row="3" col="0" colSpan="3" class="watched-movies"/>
 
   <label text="Komentáře" row="4" col="0" colSpan="3" class="comments" />
+  
 </gridLayout>
 
 <style>
@@ -38,21 +39,21 @@
   }
 
   .user-name {
-    font-size: 20px;
+    font-size: 22px;
     color: #0f0f0f;
     padding: 5px;
     border-radius: 5px;
   }
 
   .bio {
-    font-size: 12px;
+    font-size: 16px;
     color: #0f0f0f;
     margin-top: 10px;
   }
 
   .hashtags {
-    font-size: 14px;
-    color: #0f0f0f;
+    font-size: 16px;
+    color: #3c3c3c;
     margin-top: 10px;
   }
 
@@ -63,10 +64,11 @@
     text-align: center;
     border-radius: 10%;
     width: 100%;
-    height: 90%;
-    border-width: 10;
+    height: 38%;
+    border-width: 8;
     border-color: #ff4c00;
-    margin-bottom: 10;
+    font-family: 'Archabeta ExtraBold', 'archabeta-extrabold';
+    font-weight: 800;
   }
 
   .comments {
@@ -76,9 +78,12 @@
     text-align: center;
     border-radius: 10%;
     width: 100%;
-    height: 90%;
-    border-width: 10;
+    height: 38%;
+    border-width: 8;
     border-color: #64d13e;
+    font-family: 'Archabeta ExtraBold', 'archabeta-extrabold';
+    font-weight: 800;
+    margin-top: 5;
   }
 
   .profile-grid > .watched-movies, .profile-grid > .comments {
