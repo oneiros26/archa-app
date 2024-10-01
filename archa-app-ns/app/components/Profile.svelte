@@ -25,11 +25,11 @@
   }
 
   .profile-picture {
-    width: 300px;
-    height: 300px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     object-fit: cover;
-    margin: 10;
+    margin: 3;
   }
 
   .user-info {
@@ -64,7 +64,7 @@
     text-align: center;
     border-radius: 10%;
     width: 100%;
-    height: 38%;
+    height: 37%;
     border-width: 8;
     border-color: #ff4c00;
     font-family: 'Archabeta ExtraBold', 'archabeta-extrabold';
@@ -78,7 +78,7 @@
     text-align: center;
     border-radius: 10%;
     width: 100%;
-    height: 38%;
+    height: 37%;
     border-width: 8;
     border-color: #64d13e;
     font-family: 'Archabeta ExtraBold', 'archabeta-extrabold';
