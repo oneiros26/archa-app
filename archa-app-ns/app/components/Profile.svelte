@@ -18,7 +18,7 @@
 </gridLayout>
 
 <style>
-  /* Overall Grid Layout */
+
   .profile-grid {
     gap: 20px;
     background-color: #000;
@@ -26,16 +26,13 @@
     height: 100vh; /* Full viewport height */
   }
 
-  /* Profile Picture: Grid Item */
   .profile-picture {
     width: 300px;
     height: 300px;
     border-radius: 50%;
     object-fit: cover;
-    background-color: #1a1a1a;
   }
 
-  /* User Info Section */
   .user-info {
     padding: 10px;
     margin-left: 50px;
@@ -50,13 +47,13 @@
   }
 
   .bio {
-    font-size: 14px;
+    font-size: 12px;
     color: #fff;
     margin-top: 10px;
   }
 
   .hashtags {
-    font-size: 12px;
+    font-size: 14px;
     color: #aaa;
     margin-top: 10px;
   }
