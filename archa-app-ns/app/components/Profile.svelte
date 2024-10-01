@@ -1,6 +1,6 @@
-<gridLayout rows="auto, auto, auto, *, auto" columns="auto, *, *" class="profile-grid">
+<gridLayout rows="auto, auto, auto, *, *" columns="auto, *, *" class="profile-grid">
   <!-- Profile Picture (Image) -->
-  <image src="~/assets/profile.png" row="0" col="0"  class="profile-picture" />
+  <image src="~/assets/profile.png" row="0" col="0" class="profile-picture" />
 
   <!-- User Info Section (User Name, Bio, Hashtags, Socials) -->
   <gridLayout row="0" col="1" colSpan="2" rows="auto, auto, auto, auto" columns="*" class="user-info">
@@ -10,11 +10,11 @@
     <label text="🌐" row="3" col="0" class="social-media" />
   </gridLayout>
 
-  <!-- Comments Section -->
-  <label text="Komentáře" row="2" col="0" rowSpan="2" class="comments" /> <!-- Moved down to prevent overlap -->
+  <!-- Watched Movies Section (Full width, below profile picture and user info) -->
+  <label text="Sledované" row="3" col="0" colSpan="3" class="watched-movies" />
 
-  <!-- Watched Movies Section -->
-  <label text="Sledované" row="2" col="1" colSpan="2" class="watched-movies" /> <!-- Adjusted position -->
+  <!-- Comments Section (Full width, below Watched Movies) -->
+  <label text="Komentáře" row="4" col="0" colSpan="3" class="comments" />
 </gridLayout>
 
 <style>
@@ -23,6 +23,7 @@
     gap: 20px;
     background-color: #000;
     padding: 20px;
+    height: 100vh; /* Full viewport height */
   }
 
   /* Profile Picture: Grid Item */
@@ -37,12 +38,13 @@
   /* User Info Section */
   .user-info {
     padding: 10px;
+    margin-left: 50px;
+    margin-top: 30px;
   }
 
   .user-name {
     font-size: 20px;
     color: #fff;
-    /*background-color: #64d13e;*/
     padding: 5px;
     border-radius: 5px;
   }
@@ -59,30 +61,34 @@
     margin-top: 10px;
   }
 
+  /* Watched Movies */
+  .watched-movies {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    width: 100%; /* Full width */
+    height: 100%; /* Takes remaining available space */
+  }
+
   /* Comments */
   .comments {
     background-color: #555;
     color: white;
     padding: 10px;
-    text-align: left;
-    margin-top: 50px;
-    border-radius: 10px; /* Added border radius */
-    rowSpan: 2; /* Ensures it spans two rows */
-  }
-
-  /* Social Media */
-  .social-media {
-    background-color: none; /* Added a background color */
-    color: white;
-    padding: 10px; /* Added padding for aesthetics */
-    margin-top: 20px; /* Added margin to create space */
-    text-align: right;
-  }
-
-  /* Watched Movies */
-  .watched-movies {
-    color: white;
     text-align: center;
-    margin-top: 20px; /* Consistent spacing */
+    border-radius: 10px;
+    width: 100%; /* Full width */
+    height: 100%; /* Takes remaining available space */
+  }
+
+  /* Ensure the watched movies and comments fill the screen */
+  .profile-grid > .watched-movies, .profile-grid > .comments {
+    flex: 1;
+  }
+
+  .social-media {
+    text-align: right;
   }
 </style>
