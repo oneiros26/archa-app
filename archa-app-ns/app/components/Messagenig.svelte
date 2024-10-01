@@ -13,16 +13,16 @@
 </script>
 
 <absoluteLayout>
-	<label textWrap="true" marginLeft="100" top="0" text="Ahoj, včera jsem viděl Hamleta" backgroundColor="#64d13e" />
-	<label textWrap="true" marginLeft="62" top="50" text="Musím říct, že to bylo fenomenální!" backgroundColor="#64d13e" />
-	<label textWrap="true" marginLeft="20" top="110" text="Já na tom byl minulý měsíc" backgroundColor="#76a8ff" />
-	<label textWrap="true" marginLeft="20" top="160" text="úplně mě dostala scéna s duchem!" backgroundColor="#76a8ff" />
-	<label textWrap="true" marginLeft="255" top="220" text="To zní super!" backgroundColor="#ff4c00" />
-	<label textWrap="true" marginLeft="92" top="270" text="Jaká byla atmosféra na jevišti?" backgroundColor="#ff4c00" />
-	<label textWrap="true" marginLeft="67" top="320" text="Přemýšlím, že bych šel o víkendu." backgroundColor="#ff4c00" />
-	<label textWrap="true" marginLeft="165" top="380" text="Atmosféra byla skvělá!" backgroundColor="#64d13e" />
-	<label textWrap="true" marginLeft="113" top="430" text="Hudba tomu hodně pomohla." backgroundColor="#64d13e" />
-	<label textWrap="true" marginLeft="203" top="490" text="Tak to už se těším!" backgroundColor="#ff4c00" />
+	<label textWrap="true" marginLeft="40" top="0" text="Ahoj, včera jsem viděl Hamleta" backgroundColor="#64d13e" />
+	<label textWrap="true" marginLeft="27" top="50" text="Musím říct, bylo to fenomenální!" backgroundColor="#64d13e" />
+	<label textWrap="true" marginLeft="18" top="110" text="Já na tom byl minulý měsíc" backgroundColor="#76a8ff" />
+	<label textWrap="true" marginLeft="18" top="160" text="dostala mě scéna s duchem!" backgroundColor="#76a8ff" />
+	<label textWrap="true" marginLeft="198" top="220" text="To zní super!" backgroundColor="#ff4c00" />
+	<label textWrap="true" marginLeft="35" top="270" text="Jaká byla atmosféra na jevišti?" backgroundColor="#ff4c00" />
+	<label textWrap="true" marginLeft="117" top="320" text="zašel bych o víkendu." backgroundColor="#ff4c00" />
+	<label textWrap="true" marginLeft="105" top="380" text="Atmosféra byla skvělá!" backgroundColor="#64d13e" />
+	<label textWrap="true" marginLeft="53" top="430" text="Hudba tomu hodně pomohla." backgroundColor="#64d13e" />
+	<label textWrap="true" marginLeft="143" top="490" text="Tak to už se těším!" backgroundColor="#ff4c00" />
 	
 	{#each $messages as message, i}
 		<label
