@@ -1,4 +1,4 @@
-<webView src="https://archa-plus.cz/en/search/?searchString=+"></webView>
+<webView src="https://archa-plus.cz/cz/search/?searchString=+"></webView>
 <style>
     
 </style>
