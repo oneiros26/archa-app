@@ -1,4 +1,4 @@
-# ArchaApp
+# Archa App
 
 Simple android app for theater, created on the Archa+ hackaton.
 Using Nativescript and SvelteKit for development.
